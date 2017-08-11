@@ -20,6 +20,7 @@
         <activity android:name=".SignUp.SignUp2" />
         <activity android:name=".SignUp.SignUp3" />
         <activity android:name=".SignUp.SplashScreen" />
+        <activity android:name=".SignIn.SignIn1"></activity>
     </application>
 
 </manifest>
