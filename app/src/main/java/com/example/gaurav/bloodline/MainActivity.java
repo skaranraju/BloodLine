@@ -10,9 +10,10 @@ import android.widget.Button;
 import com.example.gaurav.bloodline.SignIn.SignIn1;
 import com.example.gaurav.bloodline.SignUp.SignUp1;
 import com.example.gaurav.bloodline.SignUp.SplashScreen;
+import com.example.gaurav.bloodline.lists.MedicineList;
 
 public class MainActivity extends AppCompatActivity {
-    private static int SPLASH_TIME_OUT = 1000;
+    private static int SPLASH_TIME_OUT = 3000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
