@@ -37,9 +37,9 @@ public class NewEmergency extends AppCompatActivity {
 
         //Get the SmsManager instance and call the sendTextMessage method to send message
         SmsManager sms=SmsManager.getDefault();
-        sms.sendTextMessage(no, null, msg, pi,null);
+        sms.sendTextMessage(numb, null, msg, pi,null);
 
-        Toast.makeText(getApplicationContext(), "Message Sent successfully!",
+        Toast.makeText(getApplicationContext(), "Messange sent for help!",
                 Toast.LENGTH_LONG).show();
     }
     public void help(View view)
@@ -47,7 +47,10 @@ public class NewEmergency extends AppCompatActivity {
         Sqldb dbs=new Sqldb(this);
         dbs = dbs.open();
         String num[]=sqldbobj.Get_Phon();
-     for(int i=0; i<num.length; i++)
+        for(int i=0; i<num.length; i++)
+        {
+            messageBroad(num[i]);
+        }
     }
 
 }
