@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ef5350"
+    android:padding="16dp"
+    tools:context="com.example.gaurav.bloodline.SignUp.SignUp1">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/doctor_sign"
+        tools:ignore="ContentDescription"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:text="Username"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:textColor="@android:color/white"
+        android:fontFamily="casual"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <EditText
+        android:id="@+id/useredit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user"
+        android:fontFamily="casual"
+        android:textColor="#E32636"
+        android:drawableLeft="@drawable/username"
+        android:drawablePadding="12dp"
+        android:background="@drawable/button_bg_rounded_corner"
+        android:hint="Enter Your UserName"
+        android:padding="8dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/useredit"
+        android:text="Password"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:textColor="@android:color/white"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:fontFamily="casual"/>
+
+    <EditText
+        android:id="@+id/passedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pass"
+        android:fontFamily="casual"
+        android:textColor="#E32636"
+        android:drawableLeft="@drawable/confirmpass"
+        android:drawablePadding="12dp"
+        android:background="@drawable/button_bg_rounded_corner"
+        android:hint="Min 8 Characters"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:maxLines="1"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:padding="8dp"
+        android:background="@drawable/sign_in_button_rounded"
+        android:layout_below="@id/passedit"
+        android:textColor="#E32636"
+        android:text="Sign In"/>
+
+    <TextView
+        android:id="@+id/signuptext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:text="Not A Member ? Sign Up"/>
+
+</RelativeLayout>
