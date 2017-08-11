@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ef5350"
+    android:padding="16dp"
+    tools:context="com.example.gaurav.bloodline.SignUp.SignUp1">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/full_name"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:fontFamily="casual"/>
+
+    <EditText
+        android:id="@+id/nameedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:textColor="#E32636"
+        android:drawableLeft="@drawable/name"
+        android:drawablePadding="12dp"
+        android:background="@drawable/button_bg_rounded_corner"
+        android:padding="8dp"
+        android:hint="@string/enter_full_name"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/white"
+        android:fontFamily="casual"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <EditText
+        android:id="@+id/useredit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:textColor="#E32636"
+        android:drawableLeft="@drawable/username"
+        android:drawablePadding="12dp"
+        android:background="@drawable/button_bg_rounded_corner"
+        android:hint="@string/string_enter_a_valid_username"
+        android:padding="8dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email_id"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/white"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:fontFamily="casual"/>
+
+    <EditText
+        android:id="@+id/emailedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:textColor="#E32636"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="12dp"
+        android:background="@drawable/button_bg_rounded_corner"
+        android:padding="8dp"
+        android:hint="@string/enter_your_email_id"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contact_number"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/white"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:fontFamily="casual"/>
+
+    <EditText
+        android:id="@+id/phoneedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:textColor="#E32636"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="12dp"
+        android:background="@drawable/button_bg_rounded_corner"
+        android:padding="8dp"
+        android:hint="@string/enter_your_mobile_number"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/white"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:fontFamily="casual"/>
+
+    <EditText
+        android:id="@+id/passedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:textColor="#E32636"
+        android:drawableLeft="@drawable/confirmpass"
+        android:drawablePadding="12dp"
+        android:background="@drawable/button_bg_rounded_corner"
+        android:hint="@string/min_8_characters"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:maxLines="1"
+        android:textAppearance="?android:textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/passconfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm_password"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/white"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:fontFamily="casual"/>
+
+    <EditText
+        android:id="@+id/passconfirmedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:textColor="#E32636"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="12dp"
+        android:background="@drawable/button_bg_rounded_corner"
+        android:hint="@string/string_min_8characters"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:id="@+id/fab"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/oval_ripple"
+            android:src="@drawable/right2"
+            android:elevation="12dp"
+            android:stateListAnimator="@animator/fab_raise"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

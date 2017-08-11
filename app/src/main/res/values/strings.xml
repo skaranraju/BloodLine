@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BloodLine</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="email_id">Email ID</string>
+    <string name="enter_full_name">Enter Full Name</string>
+    <string name="enter_your_email_id">Enter Your Email ID</string>
+    <string name="enter_your_mobile_number">Enter Your Mobile Number</string>
+    <string name="enter_a_valid_username">Enter a valid Username</string>
+    <string name="string_enter_a_valid_username" />
+    <string name="full_name">Full Name</string>
+    <string name="min_8_characters">Min 8 Characters</string>
+    <string name="min_8characters">Min 8 Characters</string>
+    <string name="string_min_8characters" />
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+</resources>
