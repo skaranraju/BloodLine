@@ -1,9 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.gaurav.bloodline.SignUp.SignUp2">
 
-</android.support.constraint.ConstraintLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E32636"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/question1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Can You Donate Blood ??\nAnd SAVE A LIFE !!"
+                android:textAlignment="center"
+                android:paddingTop="32dp"
+                android:paddingBottom="16dp"
+                android:textSize="32dp"
+                android:textColor="@android:color/white"
+                android:fontFamily="casual"/>
+
+            <View
+                android:id="@+id/view"
+                android:layout_below="@id/question1"
+                android:layout_marginTop="16dp"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/white" />
+
+            <LinearLayout
+                android:id="@+id/answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/view">
+
+                <Button
+                    android:id="@+id/yes"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_ripple"
+                    android:text="YES"
+                    android:textSize="28dp"
+                    android:textColor="@android:color/white"
+                    android:stateListAnimator="@null"
+                    android:elevation="16dp"
+                    android:translationZ="18dp"
+                    android:fontFamily="casual"
+                    android:textStyle="bold"
+                    android:padding="8dp"/>
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_below="@id/question1"
+                    android:layout_height="fill_parent"
+                    android:layout_width="2dp"
+                    android:background="@android:color/white" />
+
+                <Button
+                    android:id="@+id/no"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_ripple"
+                    android:layout_below="@id/view"
+                    android:text="NO"
+                    android:textSize="28dp"
+                    android:textColor="@android:color/white"
+                    android:stateListAnimator="@null"
+                    android:elevation="16dp"
+                    android:translationZ="18dp"
+                    android:fontFamily="casual"
+                    android:textStyle="bold"
+                    android:padding="8dp"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_below="@id/answer"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#b71c1c" />
+        </RelativeLayout>
+
+
+</RelativeLayout>
