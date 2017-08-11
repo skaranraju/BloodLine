@@ -21,7 +21,8 @@
         <activity android:name=".SignUp.SignUp3" />
         <activity android:name=".SignUp.SplashScreen" />
         <activity android:name=".SignIn.SignIn1" />
-        <activity android:name=".lists.MedicineList"></activity>
+        <activity android:name=".lists.MedicineList" />
+        <activity android:name=".lists.ClinicList"></activity>
     </application>
 
 </manifest>

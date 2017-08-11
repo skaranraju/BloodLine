@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.example.gaurav.bloodline.R;
 import com.example.gaurav.bloodline.SignUp.SignUp1;
 import com.example.gaurav.bloodline.SignUp.SplashScreen;
+import com.example.gaurav.bloodline.lists.ClinicList;
 import com.example.gaurav.bloodline.lists.MedicineList;
 
 public class SignIn1 extends AppCompatActivity {
@@ -46,7 +47,7 @@ public class SignIn1 extends AppCompatActivity {
                     Toast.makeText(SignIn1.this , "Please fill all the fields" , Toast.LENGTH_SHORT).show() ;
                 }
                 else {
-                    Intent in = new Intent(SignIn1.this, MedicineList.class);
+                    Intent in = new Intent(SignIn1.this, ClinicList.class);
                     startActivity(in);
                 }
             }
