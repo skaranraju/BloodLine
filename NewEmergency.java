@@ -13,23 +13,27 @@ import android.widget.Toast;
 public class NewEmergency extends AppCompatActivity {
     Sqldb sqldbobj;
 
-    EditText bgrp;
+    EditText bgrp, number;
+    String bgrps, contacts;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_emergency);
         bgrp=(EditText)findViewById(R.id.bgroup);
+        number=(EditText)findViewById(R.id.contact);
         take_inp();
 
     }
     public void take_inp()
     {
-        String bgrps = bgrp.getText().toString();
+
+        bgrps = bgrp.getText().toString();
+        contacts = number.getText().toString();
     }
 
     public void messageBroad(String numb)
     {
-        String msg="Urgent needed ";
+        String msg=bgrps+" Blood group urgently needed\n contact: "+contacts;
 
         //Getting intent and PendingIntent instance
         Intent intent=new Intent(this.getApplicationContext(),NewEmergency.class);
@@ -39,7 +43,7 @@ public class NewEmergency extends AppCompatActivity {
         SmsManager sms=SmsManager.getDefault();
         sms.sendTextMessage(numb, null, msg, pi,null);
 
-        Toast.makeText(getApplicationContext(), "Messange sent for help!",
+        Toast.makeText(getApplicationContext(), "Message sent for help!",
                 Toast.LENGTH_LONG).show();
     }
     public void help(View view)
