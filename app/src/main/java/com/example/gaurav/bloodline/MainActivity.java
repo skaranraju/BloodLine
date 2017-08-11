@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.gaurav.bloodline.SignIn.SignIn1;
 import com.example.gaurav.bloodline.SignUp.SignUp1;
 
 public class MainActivity extends AppCompatActivity {
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         signupbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this , SignUp1.class) ;
+                Intent i = new Intent(MainActivity.this , SignIn1.class) ;
                 startActivity(i);
             }
         });
