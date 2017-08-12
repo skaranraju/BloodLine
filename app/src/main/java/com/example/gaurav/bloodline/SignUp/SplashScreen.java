@@ -7,6 +7,7 @@ import android.os.Bundle;
 
 import com.example.gaurav.bloodline.MainActivity;
 import com.example.gaurav.bloodline.R;
+import com.example.gaurav.bloodline.SignIn.SignIn1;
 
 public class SplashScreen extends AppCompatActivity {
 
@@ -18,7 +19,7 @@ public class SplashScreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent( SplashScreen.this , SignUp1.class) ;
+                Intent i = new Intent( SplashScreen.this , SignIn1.class) ;
                 startActivity(i) ;
                 finish() ;
             }
